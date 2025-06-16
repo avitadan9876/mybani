@@ -1,43 +1,46 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 <head>
-    <meta charset="UTF-8">
-    <title>The Bird Story</title>
-    <style>
-        body {
-            font-family: Georgia, serif;
-            background-color: #f4f4f4;
-            color: #333;
-            padding: 40px;
-            max-width: 700px;
-            margin: auto;
-            line-height: 1.6;
-        }
-        h1 {
-            text-align: center;
-            color: #7B3F00;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>המסע אל הלב</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background: black;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .image-container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .image-container img {
+      max-height: 80%;
+      max-width: 90%;
+    }
+    .arrow-down {
+      font-size: 2.5em;
+      color: white;
+      text-decoration: none;
+      animation: bounce 1.5s infinite;
+      margin-top: 20px;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+    }
+  </style>
 </head>
 <body>
-    <h1>The Story of Two Birds</h1>
-    <p>
-        Like water reflects the face, so one’s life reflects the heart.
-    </p>
-    <p>
-        Two birds were born from the same nest, carried by the same wind.
-        Though they looked alike, each had a different song within.
-        One flew freely, curious and bright, while the other lingered,
-        cautious, quietly watching. One day, their paths crossed mid-air,
-        and for the first time, they saw in each other a reflection
-        not just of wings or feathers, but of longing, love, and the sky between.
-    </p>
-    <p>
-        And so they flew, not one after the other, but side by side.
-    </p>
-    <p>
-        — For Avital, always reflected in the calmest skies.
-    </p>
+  <div class="image-container">
+    <img src="heart-illustration.png" alt="לב מתעורר">
+    <a href="loveavital.html" class="arrow-down">↓</a>
+  </div>
 </body>
 </html>
